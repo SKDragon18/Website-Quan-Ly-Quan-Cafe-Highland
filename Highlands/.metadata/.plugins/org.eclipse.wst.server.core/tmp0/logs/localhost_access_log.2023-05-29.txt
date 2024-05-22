@@ -1,0 +1,10 @@
+127.0.0.1 - - [29/May/2023:12:08:28 +0700] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [29/May/2023:12:08:32 +0700] "GET /Highlands/ HTTP/1.1" 200 165
+0:0:0:0:0:0:0:1 - - [29/May/2023:12:08:33 +0700] "GET /Highlands/home/index.htm HTTP/1.1" 200 2758
+0:0:0:0:0:0:0:1 - - [29/May/2023:12:08:34 +0700] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [29/May/2023:12:08:36 +0700] "POST /Highlands/login/logininfo.htm HTTP/1.1" 200 6027
+0:0:0:0:0:0:0:1 - - [29/May/2023:12:08:39 +0700] "GET /Highlands/employee/list.htm HTTP/1.1" 200 19239
+0:0:0:0:0:0:0:1 - - [29/May/2023:12:08:41 +0700] "POST /Highlands/employee/list.htm HTTP/1.1" 200 19589
+0:0:0:0:0:0:0:1 - - [29/May/2023:12:08:46 +0700] "POST /Highlands/employee/list.htm HTTP/1.1" 200 19644
+0:0:0:0:0:0:0:1 - - [29/May/2023:12:08:48 +0700] "POST /Highlands/employee/list.htm HTTP/1.1" 200 19744
+0:0:0:0:0:0:0:1 - - [29/May/2023:12:08:56 +0700] "POST /Highlands/employee/list.htm HTTP/1.1" 200 19845

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   		http://www.springframework.org/schema/beans/spring-beans.xsd
+	   		http://www.springframework.org/schema/context
+	   		http://www.springframework.org/schema/context/spring-context.xsd
+	   		http://www.springframework.org/schema/tx 
+			http://www.springframework.org/schema/tx/spring-tx.xsd
+			http://www.springframework.org/schema/mvc 
+			http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<mvc:interceptors>
+		<mvc:interceptor>
+		    <mvc:mapping path="/home/profile.htm"/> 
+		    <mvc:mapping path="/home/profile/**"/>
+			<mvc:mapping path="/home/changepassword.htm"/> 
+			<mvc:mapping path="/home/password.htm"/> 
+			<mvc:mapping path="/home/changepasswordsuccess.htm"/>
+			<mvc:mapping path="/login/logout.htm"/>
+			<bean class="ptithcm.interceptor.LoggerInterceptor" />
+		</mvc:interceptor>
+		<mvc:interceptor>
+		    <mvc:mapping path="/account/**"/> 
+			<bean class="ptithcm.interceptor.AdminInterceptor" />
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/import/**"/>
+			<mvc:mapping path="/product/viewSP.htm"/>
+			<bean class="ptithcm.interceptor.NhanVienInterceptor"/>
+		</mvc:interceptor>
+		<mvc:interceptor>
+		    <mvc:mapping path="/employee/**"/> 
+		    <mvc:mapping path="/product/list.htm"/>
+			<mvc:mapping path="/product/list/**"/>
+			<mvc:mapping path="/product/size/**"/>
+			<mvc:mapping path="/product/type/**"/>
+			<mvc:mapping path="/product/recipe/**"/>
+			<mvc:mapping path="/product/detail/**"/>
+			<mvc:mapping path="/product/detailMaterial/**"/>
+			<mvc:mapping path="/promotion/**"/>
+			<mvc:mapping path="/material/**"/> 
+			<mvc:mapping path="/history/**"/> 
+			<mvc:mapping path="/statistics.htm"/>
+			<bean class="ptithcm.interceptor.QuanLyInterceptor"/>
+		</mvc:interceptor>
+		
+	</mvc:interceptors>
+
+</beans>

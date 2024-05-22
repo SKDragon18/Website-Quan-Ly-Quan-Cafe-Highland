@@ -1,0 +1,9 @@
+127.0.0.1 - - [25/Jun/2023:17:11:03 +0700] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [25/Jun/2023:17:11:04 +0700] "GET /Highlands/ HTTP/1.1" 200 165
+0:0:0:0:0:0:0:1 - - [25/Jun/2023:17:11:04 +0700] "GET /Highlands/home/index.htm HTTP/1.1" 200 2758
+0:0:0:0:0:0:0:1 - - [25/Jun/2023:17:11:07 +0700] "POST /Highlands/login/logininfo.htm HTTP/1.1" 200 3565
+0:0:0:0:0:0:0:1 - - [25/Jun/2023:17:11:10 +0700] "GET /Highlands/home/changepassword.htm HTTP/1.1" 200 2537
+0:0:0:0:0:0:0:1 - - [25/Jun/2023:17:11:13 +0700] "POST /Highlands/home/password.htm HTTP/1.1" 200 2635
+0:0:0:0:0:0:0:1 - - [25/Jun/2023:17:11:16 +0700] "POST /Highlands/home/password.htm HTTP/1.1" 200 2588
+0:0:0:0:0:0:0:1 - - [25/Jun/2023:17:11:19 +0700] "POST /Highlands/home/password.htm HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [25/Jun/2023:17:11:22 +0700] "GET /Highlands/home/changepasswordsuccess.htm HTTP/1.1" 200 2167
